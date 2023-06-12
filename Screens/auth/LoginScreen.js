@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigation } from '@react-navigation/native';
 import {
   Text,
   TextInput,
@@ -17,7 +18,8 @@ const initialState = {
   password: "",
 };
 
-const LoginScreen = ({ navigation }) => {
+const LoginScreen = () => {
+  const navigation = useNavigation();
   const [isShowKeyboard, setIsShowKeyboard] = useState(false);
   const [isPasswordHidden, setIsPasswordHidden] = useState(true);
   const [state, setState] = useState(initialState);
@@ -27,8 +29,8 @@ const LoginScreen = ({ navigation }) => {
   });
 
   const [fontsLoaded] = useFonts({
-    "Roboto-Regular": require("../assets/fonts/Roboto-Regular.ttf"),
-    "Roboto-Medium": require("../assets/fonts/Roboto-Medium.ttf"),
+    "Roboto-Regular": require("../../assets/fonts/Roboto-Regular.ttf"),
+    "Roboto-Medium": require("../../assets/fonts/Roboto-Medium.ttf"),
   });
 
   if (!fontsLoaded) {
