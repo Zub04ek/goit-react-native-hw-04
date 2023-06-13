@@ -57,7 +57,7 @@ const LoginScreen = () => {
       <View style={styles.container}>
         <ImageBackground
           style={styles.image}
-          source={require("../assets/images/Photo-BG.jpg")}
+          source={require("../../assets/images/Photo-BG.jpg")}
         >
           <View style={styles.box}>
             <Text style={styles.title}>Log in</Text>

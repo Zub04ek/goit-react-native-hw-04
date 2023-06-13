@@ -81,7 +81,7 @@ const RegistrationScreen = () => {
       <View style={styles.container}>
         <ImageBackground
           style={styles.image}
-          source={require("../assets/images/Photo-BG.jpg")}
+          source={require("../../assets/images/Photo-BG.jpg")}
         >
           <View style={styles.box}>
             <View style={styles.photoBox}>
@@ -92,7 +92,7 @@ const RegistrationScreen = () => {
                     style={styles.photoIconRemove}
                     onPress={removeAvatar}
                   >
-                    <Image source={require("../assets/remove.png")} />
+                    <Image source={require("../../assets/remove.png")} />
                   </TouchableOpacity>
                 </>
               ) : (
@@ -100,7 +100,7 @@ const RegistrationScreen = () => {
                   style={styles.photoIconAdd}
                   onPress={pickImageAsync}
                 >
-                  <Image source={require("../assets/add.png")} />
+                  <Image source={require("../../assets/add.png")} />
                 </TouchableOpacity>
               )}
             </View>
