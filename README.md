@@ -1,9 +1,17 @@
-# Screenshots of project on Android emulator with React Native Debugger
+# Screenshots of project on Android emulator
 
-## 1. Сhecking the launch of the remote debugger by logging data from the registration form
+## 1. Posts Screen
 
-![Сhecking the launch of the remote debugger by logging data from the registration form](./assets/screenshots/registration.jpg)
+![Posts Screen](./assets/screenshots/PostScreen.jpg)
 
-## 2. Сhecking the launch of the remote debugger by logging data from the login form
+## 2. Create post Screen
 
-![Сhecking the launch of the remote debugger by logging data from the login form](./assets/screenshots/login.jpg)
+![Create post Screen](./assets/screenshots/CreatePostScreen.jpg)
+
+## 3. Profile Screen
+
+![Profile Screen](./assets/screenshots/ProfileScreen.jpg)
+
+## 4. Comments Screen
+
+![Comments Screen](./assets/screenshots/CommentsScreen.jpg)
