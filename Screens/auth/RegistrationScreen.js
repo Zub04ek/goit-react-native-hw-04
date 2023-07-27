@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation } from "@react-navigation/native";
 import {
   Text,
   TextInput,
@@ -213,7 +213,15 @@ const RegistrationScreen = () => {
               </View>
             </KeyboardAvoidingView>
 
-            <TouchableOpacity style={styles.button} onPress={onLogin}>
+            <TouchableOpacity
+              style={styles.button}
+              onPress={() => (
+                onLogin(),
+                navigation.navigate("HomeScreen", {
+                  screen: "Posts",
+                })
+              )}
+            >
               <Text style={styles.buttonText}>Sign up</Text>
             </TouchableOpacity>
 
